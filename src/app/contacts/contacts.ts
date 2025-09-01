@@ -23,7 +23,7 @@ export class Contacts {
 
   // Social Media Cards
   socials = [
-    { name: 'Facebook', color: 'linear-gradient(135deg, #1877F2 0%, #3b5998 33%, #4e69a2 66%, #8b9dc3 100%)', icon: 'fab fa-facebook', description: 'Follow me or Add me on Facebook to see my latest updates and posts.', link: 'https://www.facebook.com/belleoved' },
+    { name: 'Facebook', color: 'linear-gradient(135deg, #1877F2 0%, #3b5998 33%, #4e69a2 66%, #8b9dc3 100%)', icon: 'fab fa-facebook', description: 'Follow me or Add me on Facebook to see my latest updates and posts.', link: 'https://www.facebook.com/share/1HgHdJHaDx' },
     { name: 'Instagram', color: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%)', icon: 'fab fa-instagram', description: 'Catch my creative side on Instagram through stories and posts.', link: 'https://www.instagram.com/ivxomints' },
     { name: 'GitHub', color: 'linear-gradient(135deg, #333333 0%, #555555 33%, #777777 66%, #999999 100%)', icon: 'fab fa-github', description: 'Check out my projects and contributions on GitHub.', link: 'https://github.com/izzabellefolio' },
     { name: 'LinkedIn', color: 'linear-gradient(135deg, #0A66C2 0%, #004182 33%, #0066b2 66%, #66a6ff 100%)', icon: 'fab fa-linkedin', description: 'Let’s connect professionally on LinkedIn and grow together.', link: 'https://www.linkedin.com/in/izza-belle-53b928379/'},
