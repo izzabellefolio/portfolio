@@ -1,0 +1,31 @@
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-sub {
+  background: linear-gradient(135deg, #cd5acd 0%, #d92be2 100%);
+  border: 1px solid #ba2be2;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-sub:hover {
+  background: linear-gradient(135deg, #d06ce4 0%, #d282b7 100%);
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.text-purple {
+  color: #6f42c1;
+}
+.text-pink {
+  color: #c40665;
+}

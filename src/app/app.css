@@ -1,0 +1,80 @@
+.bg-pink {
+  background: linear-gradient(135deg, #ff9de2, #7f7fff);
+}
+.bi-instagram {
+  color: #E1306C; /* Instagram pink */
+  font-size: 28px;
+}
+
+.bi-facebook {
+  color: #1877F2; /* Facebook blue */
+  font-size: 28px;
+}
+
+.bi-tiktok {
+  color: black; /* TikTok black */
+  font-size: 28px;
+}
+
+/* Smooth transition for all icons */
+.socials a i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Instagram hover */
+.socials a:hover .bi-instagram {
+  color: #ffae21 !important;
+  transform: scale(1.2);
+}
+
+/* TikTok hover */
+.socials a:hover .bi-tiktok {
+  color: #55f4ff !important;
+  transform: scale(1.2);
+}
+
+/* Facebook hover */
+.socials a:hover .bi-facebook {
+  color: #9500ff !important;
+  transform: scale(1.2);
+}
+
+/* Smooth transition for links & icons */
+.nav-link,
+.navbar i {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Nav links hover + active */
+.nav-link:hover,
+.nav-link.active {
+  color: #0d6efd !important; /* Bootstrap primary blue */
+  transform: scale(1.05);
+}
+
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.15); /* transparent white */
+  backdrop-filter: blur(10px);           /* frosted glass blur */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+}
+
+/* Default link style */
+.glass-navbar .nav-link {
+  color: #000000 !important;           /* black text */
+  transition: color 0.3s ease, background 0.3s ease;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+/* Hover effect */
+.glass-navbar .nav-link:hover {
+  color: #00e5ff !important;        /* cyan text on hover */
+  background: rgba(255, 255, 255, 0.1); /* subtle glass highlight */
+}
+
+/* Active (current page) */
+.glass-navbar .nav-link.active {
+  color: #ff4081 !important;        /* pink text for active link */
+  background: rgba(255, 255, 255, 0.527); /* stronger glass highlight */
+}

@@ -1,0 +1,56 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark glass-navbar fixed-top">
+    <div class="container-fluid">
+
+      <!-- Left: Logo -->
+      <a class="navbar-brand fw-bold fs-3 mx-4 text-black" routerLink="/home">Portfolio Angular</a>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler bg-pink" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Content -->
+      <div class="collapse navbar-collapse" id="navbarNav" #navbarCollapse>
+
+        <!-- Center: Nav links -->
+        <ul class="navbar-nav mx-auto gap-1 gap-lg-5 fs-5 text-center">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeNavbar()">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="closeNavbar()">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contacts" routerLinkActive="active" (click)="closeNavbar()">Contacts</a>
+          </li>
+        </ul>
+
+        <!-- Right: Socials -->
+        <div class="socials d-flex justify-content-center justify-content-lg-end mt-2 mt-lg-0 mx-4">
+          <a href="https://www.instagram.com/ivxomints" target="_blank" class="ms-3">
+            <i class="bi bi-instagram text-danger fs-4"></i>
+          </a>
+          <a href="https://www.tiktok.com/@nobelletypico" target="_blank" class="ms-3">
+            <i class="bi bi-tiktok text-dark fs-4"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1HgHdJHaDx" target="_blank" class="ms-3">
+            <i class="bi bi-facebook text-primary fs-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container-fluid mh-100">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="text-light text-center fixed-bottom glass-navbar">
+  <p class="pt-1 mt-3 text-black">&copy; 2025 Izza Belle. All rights reserved.</p>
+</footer>

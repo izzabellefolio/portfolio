@@ -1,0 +1,39 @@
+.text-pink {
+    color: #cc15e4 !important; /* Pink color */
+}
+.text-puprle {
+    color:blueviolet !important; /* Purple color */
+}
+.btn-pink:hover {
+    background-color: #f395ff !important; /* Pink color */
+}
+.btn-pink {
+    background-color: #cc15e4 !important; /* Pink background */
+    outline: 1px #cc15e4 solid; /* Pink border */
+    color: white !important; /* White text */
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-gradient {
+  background: linear-gradient(45deg, #7f7fff, #ff9de2);
+  color: white;
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 157, 226, 0.7);
+}
+.hover-scale:hover { transform: scale(1.05); transition: 0.3s; }
+.hover-card:hover { transform: translateY(-5px); transition: 0.3s; }
+.btn-gradient { background: linear-gradient(135deg, #ff9de2, #7f7fff); border:none; color:white; }
+.btn-gradient:hover { opacity:0.9; }
+@keyframes float { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(-15px); } }

@@ -1,0 +1,99 @@
+<!-- Social Media Section -->
+<section class="bg-light py-5" style="display: flex; min-height: 100vh; padding-top: 100px; align-items: center;">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Follow Me</h2>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" *ngFor="let social of socials">
+        <div class="card shadow-sm p-4 text-white" [style.background]="social.color" style="transition: transform 0.3s, box-shadow 0.3s;">
+          <i [class]="social.icon + ' fa-3x mb-3'"></i>
+          <h5>{{ social.name }}</h5>
+          <p>{{ social.description }}</p>
+          <a [href]="social.link" class="btn btn-light btn-sm mt-2" target="_blank">Visit Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="d-flex align-items-center bg-light" style="min-height: 100vh; padding-top: 100px; background: linear-gradient(135deg, #ff9de2, #7f7fff);">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5 text-purple">Contact Me</h2>
+
+    <div class="row align-items-center mb-5">
+      <!-- LEFT: Contact Form -->
+       <div class="col-lg-6 d-flex justify-content-center">
+        <div class="text-center">
+          <img [src]="imageURL" alt="Your Photo" class="img-fluid shadow mb-4 hover-scale" style="max-width: 220px;">
+          <h3 class="fw-bold text-white">Let’s Work Together!</h3>
+          <p class="text-white px-3">
+            I’m always open to exciting projects, collaborations, or even just a friendly chat.  
+            Drop me a message and I’ll get back to you soon!
+          </p>
+          <p class="fw-bold mb-0 text-pink">📧 {{ email }}</p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
+        <div class="card shadow-sm p-4 w-100"
+            style="max-width: 450px; transition: transform 0.3s, box-shadow 0.3s;">
+          <form (ngSubmit)="sendEmail()" #contactForm="ngForm">
+
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">Name</label>
+              <input type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    [(ngModel)]="name"
+                    name="from_name"
+                    required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    [(ngModel)]="emailInput"
+                    name="reply_to"
+                    required>
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control"
+                        id="message"
+                        rows="4"
+                        placeholder="Write your message"
+                        [(ngModel)]="message"
+                        name="message"
+                        required></textarea>
+            </div>
+
+            <!-- Button -->
+            <button type="submit" class="btn-sub w-100">
+              Send Message
+            </button>
+
+            <!-- Note: Confirmation Info -->
+            <small class="text-muted d-block text-center mt-2">
+              ✅ You will receive a confirmation email once your message is sent.
+            </small>
+
+            <!-- Success Alert -->
+            <div *ngIf="emailSent" class="alert alert-success mt-3 text-center">
+              Your message has been sent successfully! Check your inbox for confirmation.
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
